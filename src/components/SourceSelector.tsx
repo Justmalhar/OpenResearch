@@ -9,14 +9,14 @@ interface SourceSelectorProps {
 
 export function SourceSelector({ selectedSource, onSourceChange }: SourceSelectorProps) {
   const sources: { id: SearchSource; label: string; icon: React.ReactNode }[] = [
-    { id: 'search', label: 'Web', icon: <Search className="w-5 h-5" /> },
-    { id: 'images', label: 'Images', icon: <Image className="w-5 h-5" /> },
-    { id: 'videos', label: 'Videos', icon: <Youtube className="w-5 h-5" /> },
-    { id: 'places', label: 'Places', icon: <MapPin className="w-5 h-5" /> },
-    { id: 'news', label: 'News', icon: <Newspaper className="w-5 h-5" /> },
-    { id: 'shopping', label: 'Shopping', icon: <ShoppingBag className="w-5 h-5" /> },
-    { id: 'scholar', label: 'Scholar', icon: <BookOpen className="w-5 h-5" /> },
-    { id: 'patents', label: 'Patents', icon: <FileText className="w-5 h-5" /> },
+    { id: 'search', label: 'الويب', icon: <Search className="w-5 h-5" /> },
+    { id: 'images', label: 'الصور', icon: <Image className="w-5 h-5" /> },
+    { id: 'videos', label: 'الفيديو', icon: <Youtube className="w-5 h-5" /> },
+    { id: 'places', label: 'الأماكن', icon: <MapPin className="w-5 h-5" /> },
+    { id: 'news', label: 'الأخبار', icon: <Newspaper className="w-5 h-5" /> },
+    { id: 'shopping', label: 'التسوق', icon: <ShoppingBag className="w-5 h-5" /> },
+    { id: 'scholar', label: 'البحث العلمي', icon: <BookOpen className="w-5 h-5" /> },
+    { id: 'patents', label: 'براءات الاختراع', icon: <FileText className="w-5 h-5" /> },
   ];
 
   return (

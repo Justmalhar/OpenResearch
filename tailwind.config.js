@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class', // Add explicit dark mode
   theme: {
     extend: {
       typography: {
@@ -42,11 +43,18 @@ export default {
             'tbody tr:hover': {
               backgroundColor: '#F9FAFB',
             },
+            'h1, h2, h3': {
+              color: '#1F2937',
+              'font-weight': '600',
+              'scroll-margin-top': '5rem',
+              'dark:color': '#E4E5E7',
+            },
             pre: {
-              backgroundColor: '#F3F4F6',
+              'background-color': '#1E293B',
+              'color': '#E4E5E7',
               padding: '1rem',
-              borderRadius: '0.5rem',
-              overflow: 'auto',
+              'border-radius': '0.5rem',
+              'overflow-x': 'auto',
             },
             code: {
               backgroundColor: '#F3F4F6',
@@ -66,6 +74,21 @@ export default {
           },
         },
       },
+      textDirection: {
+        rtl: 'rtl',
+      },
+      fontFamily: {
+        tajawal: ['Tajawal', 'sans-serif'],
+      },
+      colors: {
+        dark: {
+          bg: '#0F172A',      // Darker background
+          surface: '#1E293B', // Refined surface color
+          text: '#E4E5E7',    // Enhanced readability
+          border: '#2C3E50',  // Better contrast
+          accent: '#3B82F6'   // Primary accent
+        }
+      }
     },
   },
   plugins: [

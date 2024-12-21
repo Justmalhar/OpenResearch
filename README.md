@@ -1,5 +1,9 @@
 # OpenResearch
 
+**Other Languages**:
+
+- [Arabic عربي](README.ar.md) 🇸🇦
+
 ![Demo Image](https://github.com/Justmalhar/OpenResearch/raw/main/demo.jpg)
 
 Check out the live website: Open-Research.ai
@@ -7,7 +11,7 @@ Check out the live website: Open-Research.ai
 ### AI-Powered Search Engine
 
 ## Overview
-**OpenResearch** is a AI-driven search engine that offers users a comprehensive and dynamic search experience. Built on top of the OpenAI API and Serper.dev API, this platform combines the latest AI technologies with powerful search features across multiple content types. With its modern, intuitive interface, users can easily access and explore a wide array of information from a single platform.
+**OpenResearch** is a AI-driven search engine that offers users a comprehensive and dynamic search experience. Built on top of the X.ai API (Grok2) and Serper.dev API, this platform combines the latest AI technologies with powerful search features across multiple content types. With its modern, intuitive interface, users can easily access and explore a wide array of information from a single platform.
 
 ## Key Features
 - **Multi-Modal Search**: Seamlessly search across diverse content categories, providing an enriched user experience for information retrieval:
@@ -25,13 +29,11 @@ Check out the live website: Open-Research.ai
   - **Vite** for ultra-fast builds and Hot Module Replacement (HMR).
   - **TailwindCSS** for modern, highly customizable UI styling.
   - **ESLint** for maintaining consistent, high-quality code.
-  - **Lucide React** for clean and customizable UI icons.
-  - **React Markdown** for convenient support of Markdown content.
 
 ## Quick Deployment on Vercel
 Deploying **Open-Research.ai** is simple and fast with Vercel's one-click deployment option. Vercel provides a powerful and scalable environment for your project.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/justmalhar/OpenResearch&env=VITE_OPENAI_API_KEY&env=VITE_SERPER_API_KEY)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/justmalhar/OpenResearch&env=VITE_XAI_API_KEY&env=VITE_SERPER_API_KEY)
 
 ## Installation Guide
 To run **Open-Research.ai** locally, follow these steps:
@@ -58,7 +60,7 @@ npm run dev
 ### Environment Setup
 Configure your environment variables by creating a `.env` file in the root directory:
 ```env
-VITE_OPENAI_API_KEY=your_openai_api_key
+VITE_XAI_API_KEY=your_xai_api_key
 VITE_SERPER_API_KEY=your_serper_api_key
 ```
 
